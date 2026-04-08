@@ -7,7 +7,6 @@ Route::livewire('/', 'public::pages.index')->name('index');
 Route::livewire('/about', 'public::pages.about')->name('about'); 
 Route::livewire('/contact', 'public::pages.contact')->name('contact');   
 Route::livewire('/login', 'auth::login')->name('login');
-Route::livewire('/register', 'auth::register')->name('register');
 Route::livewire('/logout', 'auth::logout')->name('logout');
 
 Route::middleware(['auth', 'role:admin'])->prefix('admin')->group(function () {
