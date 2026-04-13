@@ -24,7 +24,7 @@
                                         <button 
                                             x-data 
                                             @click="
-                                                if (confirm('Are you sure you want to delete ' + {{ count($selectedUsers) }} + ' user(s)?')) {
+                                                if (confirm('Are you sure you want to delete ' + {{ count($selectedUsers) }} + ' shop owner(s)?')) {
                                                     $wire.deleteSelected()
                                                 }
                                             "
